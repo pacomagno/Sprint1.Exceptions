@@ -19,7 +19,7 @@ public class Input {
 
                 throw new InputMismatchException("Error: Invalid input. Please enter 's' for yes or 'n' for no.");
             } catch (InputMismatchException e) {
-                System.out.println(e.getMessage()); // Show error and repeat prompt
+                System.out.println(e.getMessage());
             }
         }
     }
@@ -42,7 +42,7 @@ public static char readChar(String message) {
 
                 return input.charAt(0);
             } catch (InvalidInputException e) {
-                System.out.println("Error: " + e.getMessage()); // Manejo interno en Input
+                System.out.println("Error: " + e.getMessage());
             }
         }
     }
